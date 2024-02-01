@@ -10,7 +10,7 @@ const { validarCampos } = require('../middlewares/validar-campos');
 const { validarJWT } = require('../middlewares/validar-jwt');
 
 const router = Router();
-router.use(validarJWT);
+
 router.get('/',(req,res)=>{res.status(200).json({ok:'Bienvenido'})})
 router.post(
     '/new',
