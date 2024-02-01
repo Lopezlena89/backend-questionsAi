@@ -30,9 +30,10 @@ app.use('/auth', require('./routes/auth') );
 app.use('/', require('./routes/messages'));
 app.use('/group', require('./routes/group'));
 
-// app.get('*',(req,res)=>{
-//     res.sendFile(__dirname + '/public/index.html');
-// })
+
+app.get('*',(req,res)=>{
+    res.sendFile(__dirname + '/public/index.html');
+})
 
 
 
